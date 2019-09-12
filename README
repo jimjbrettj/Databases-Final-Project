@@ -1,0 +1,98 @@
+
+               James Johnson 241 Final Project
+
+Upon running this program, the user will be prompted to enter their oracle
+username and password.
+This established connection with the database and is necessary to use this 
+interface.
+
+Note on my interface: 
+- For many IDs I do not require user input and am able to auto generate the 
+correct ID. I do this to avoid multiple things with the same ID and to limit 
+user input. I set most ID's = row number when I generated my data, so I use 
+this concept to create new IDs.
+- I include a makefile for the users convenience
+- The promotion option in my general manager is a particulary cool class to run
+
+Running my Program (I have included a makefile):
+	- Navigate to my outer directory(jdj221johnson) and run the command 'make'
+	- Type 'java -jar jdj221.jar' to run the program
+	- If you need to recompile, simply run make again
+
+For adding shipment:
+	- prod_id 7 is a good product to create a shipment with because it has 
+	  multiple suppliers, which allows the user to pick the one with the best 
+	  price.
+
+Deletion in my interfaces:
+	- All deletions in my program can only be executed on data entered by 
+	  the user (not my original data).
+	- I do this because I wish to keep my base data all the same so as not 
+	  to mess up relationships in my dataset or mess with Regorks records 
+	- So to test deletion the user will need to first add 
+	  something (supplier, product, shipment) and then proceed to delete 
+	  what they have added
+
+My Program has 4 Interfaces
+	- The General Manager interface
+	- The Supplier Manager Interface
+	- The Product Manager Interface
+	- The Shipment Manager Interface
+
+----------------------------------------------------------------------------------
+General Manager Interface
+This interface is pretty much a view only interface, and contains several
+"sub-interfaces" if you want to call them that. In this interface the user can
+select from the following menu options:
+	1) View Product Information
+		- This takes you to another menu for products that contains
+		  other view like functions. 
+	2) View Supplier Information
+		- This takes you to another menu for suppliers that contains
+		  other view like functions
+	3) View Shipment Information
+		- This takes you to another menu for shipments that contains
+		  other view like functions
+	4) Order a recall
+		- This takes you to another menu that helps you create a recall
+	5) Promote Jimmy Johnson
+		- This takes you to a menu which enables you to elect to promote 
+		  the employee Jimmy Johnson. The user will notice that there exists
+		  no option to fire or demote him. This is becasue he is doing
+		  such good work that is these functions are not necessary.
+	6) Quit
+
+----------------------------------------------------------------------------------
+Supplier Manager Interface
+This interface is the interface one would use to update, add, or delete supplier data.
+	1) View all Suppliers
+	2) Add a new Supplier
+	3) Update a Suppliers Name
+	4) Update a Suppliers Address
+	5) View the current number of Suppliers
+	6) Delete a Supplier
+	7) Return to main menu
+
+----------------------------------------------------------------------------------
+Product Manager Interface
+This interface is the interface one would use to add or delete products.
+	1) View all Products
+	2) Add a new Product
+	3) Delete a Product
+	4) View the current number of products
+	5) Return to main menu
+
+----------------------------------------------------------------------------------
+Shipment Manager Interface
+	1) View all Products
+	2) View all Suppliers
+	3) View all Shipments
+	4) Create a new Shipment
+	5) Delete a Shipment
+	6) View the number of Shipments
+	7) Return to main menu
+
+Credits:
+	- Zack Rubenstein gave me the idea of using colors in my terminal 
+	- Maxim Vezenov gave me the idea for clearing the terminal when
+	  switching classes to make it more clean.
